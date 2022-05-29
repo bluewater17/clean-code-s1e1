@@ -5,24 +5,24 @@
   font-family: Lato, sans-serif;
 }
 
-.matrix {
+.header-content {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.matrix img {
+.header-content img {
   width: 100%;
 }
 
-.matrix .more-info {
+.header-content__info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
-  .matrix {
+  .header-content {
     text-align: center;
   }
 
@@ -40,21 +40,22 @@
   flex-grow: 1;
 }
 
-.task-row {
+.main-content__task-row {
   display: flex;
+  padding: 20px 0;
 }
 
-.list {
+.main-content__list {
   margin: 0;
   padding: 0px;
 }
 
-.list-item,
-.sub-title {
+.main-content__list-item,
+.main-content__sub-title {
   list-style: none;
 }
 
-.input,
+.list-item__input,
 .btn {
   outline: none;
 }
@@ -74,8 +75,7 @@
 }
 
 /* Heading */
-.sub-title,
-.new-task-label {
+.main-content__sub-title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -113,7 +113,7 @@
 }
 
 /* Task list */
-.list-item {
+.main-content__list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -123,22 +123,22 @@
   align-items: center;
 }
 
-.list-item > * {
+.main-content__list-item > * {
   vertical-align: middle;
 }
 
-.list-item > .checkbox-input {
+.main-content__list-item > .checkbox-input {
   margin: 0 10px;
 }
 
-.list-item > .label {
+.main-content__list-item > .list-item__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list-item > .text-input {
+.main-content__list-item > .text-input {
   width: 226px;
 }
 
@@ -153,21 +153,21 @@
 }
 
 /* Completed */
-#completed .label {
+#completed .list-item__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.list .list-item .text-input {
+.main-content__list .main-content__list-item .text-input {
   display: none;
 }
 
-.list .edit-task .text-input {
+.main-content__list .edit-task .text-input {
   display: inline-block;
   width: 224px;
 }
 
-.list .edit-task .label {
+.main-content__list .edit-task .list-item__label {
   display: none;
 }

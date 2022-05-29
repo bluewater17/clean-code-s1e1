@@ -6,40 +6,40 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 <body class="body">
-  <header class="matrix">
+  <header class="header-content">
     <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
-    <a class="more-info" 
+    <a class="header-content__info" 
        href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
   <main class="main-content">
-    <p id="add-item"><label class="label new-task-label" for="new-task">Add Item</label></p>
-    <section class="task-row">
+    <h3 class="main-content__sub-title">Add item</h3>
+    <section class="main-content__task-row task-row">
       <input class="input text-input task" type="text" id="new-task"/>
       <button class="btn">Add</button>
     </section>
-    <h3 class="sub-title">Todo</h3>
-    <ul class="list" id="incompleted">
-      <li class="list-item">
-        <input class="input checkbox-input task" type="checkbox" />
-        <label class="label">Pay Bills</label>
-        <input class="input text-input task" type="text"/>
+    <h3 class="main-content__sub-title">Todo</h3>
+    <ul class="main-content__list" id="incompleted">
+      <li class="main-content__list-item">
+        <input class="list-item__input checkbox-input" type="checkbox" checked="false"/>
+        <label class="list-item__label task">Pay Bills</label>
+        <input class="list-item__input text-input task" type="text"/>
         <button class="edit btn">Edit</button>
         <button class="delete btn"><img src="./remove.svg" alt="Delete Button"/></button>
       </li>
-      <li class="edit-task list-item"">
-        <input class="input checkbox-input task" type="checkbox" />
-        <label class="label">Go Shopping</label>
-        <input class="input text-input task" type="text" value="Go Shopping" />
+      <li class="edit-task main-content__list-item">
+        <input class="list-item__input checkbox-input" type="checkbox" />
+        <label class="list-item__label task">Go Shopping</label>
+        <input class="list-item__input text-input task" type="text" value="Go Shopping" />
         <button class="edit btn">Save</button>
         <button class="delete btn"><img src="./remove.svg" alt="Delete Button"/></button>
       </li>
     </ul>
-    <h3 class="sub-title">Completed</h3>
-    <ul class="list" id="completed">
-      <li class="list-item">
-        <input class="input checkbox-input task" type="checkbox" checked />
-        <label class="label">See the Doctor</label>
-        <input class="input text-input task" type="text" />
+    <h3 class="main-content__sub-title">Completed</h3>
+    <ul class="main-content__list" id="completed">
+      <li class="main-content__list-item">
+        <input class="list-item__input checkbox-input" type="checkbox" checked="" />
+        <label class="list-item__label task">See the Doctor</label>
+        <input class="list-item__input text-input task" type="text" />
         <button class="edit btn">Edit</button>
         <button class="delete btn"><img src="./remove.svg" alt="Delete Button"/></button>
       </li>
